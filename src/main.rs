@@ -138,12 +138,18 @@ async fn bluetooth_demo() -> anyhow::Result<()> {
 
                     if orientation != previous_orientation {
                         #[cfg(target_os = "windows")]
-                        rotate_screen::rotate(rotate_screen::Platform::Windows, "1", orientation)
-                            .unwrap();
+                        dbg!(rotate_screen::rotate(
+                            rotate_screen::Platform::Windows,
+                            "1",
+                            orientation
+                        ));
 
                         #[cfg(not(target_os = "windows"))]
-                        rotate_screen::rotate(rotate_screen::Platform::Kde, "eDP-1", orientation)
-                            .unwrap()
+                        dbg!(rotate_screen::rotate(
+                            rotate_screen::Platform::Kde,
+                            "eDP-1",
+                            orientation
+                        ));
                     }
                 }
             }

@@ -1,6 +1,6 @@
 mod kde;
 #[cfg(target_os = "windows")]
-mod win32;
+mod windows;
 
 #[derive(Clone, Copy, Debug, PartialEq, Eq)]
 pub enum Platform {

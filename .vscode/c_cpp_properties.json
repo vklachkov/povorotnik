@@ -3,7 +3,7 @@
         {
             "name": "Raspberry Pi Pico W",
             "includePath": [
-                "${workspaceFolder}/src/**",
+                "${workspaceFolder}/firmware/**",
                 "${env:PICO_SDK_PATH}/**"
             ],
             "compilerPath": "/usr/bin/arm-none-eabi-gcc",

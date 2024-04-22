@@ -679,6 +679,7 @@ dependencies = [
  "serde_json",
  "simple_logger",
  "tokio",
+ "uuid",
  "windows-sys 0.52.0",
 ]
 

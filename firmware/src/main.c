@@ -16,7 +16,7 @@
 #define ADXL345_ADDRESS (0xA6 >> 1)
 #define ADXL345_TIMEOUT make_timeout_time_ms(100)
 
-#define HEARTBEAT_PERIOD_MS 1000
+#define HEARTBEAT_PERIOD_MS 100
 
 static int  le_notification_enabled;
 static btstack_timer_source_t heartbeat;
